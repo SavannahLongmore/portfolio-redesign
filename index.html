@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Savannah Longmore | Creative Portfolio</title>
+  <meta name="description" content="Responsive one-page creative portfolio with intersection observer navigation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.min.css">
+</head>
+<body>
+  <div id="navWrapper">
+    <nav aria-label="Section navigation">
+      <a class="brand" href="#intro">
+        <span class="brand-mark">SL</span>
+        <span class="brand-name">Savannah</span>
+      </a>
+      <ul>
+        <li class="active"><a href="#intro" aria-label="Go to Intro"><ion-icon name="sparkles-outline"></ion-icon><span>Intro</span></a></li>
+        <li><a href="#about" aria-label="Go to About"><ion-icon name="person-outline"></ion-icon><span>About</span></a></li>
+        <li><a href="#skills" aria-label="Go to Skills"><ion-icon name="layers-outline"></ion-icon><span>Skills</span></a></li>
+        <li><a href="#projects" aria-label="Go to Projects"><ion-icon name="color-palette-outline"></ion-icon><span>Projects</span></a></li>
+        <li><a href="#connect" aria-label="Go to Connect"><ion-icon name="planet-outline"></ion-icon><span>Connect</span></a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div id="mainWrapper">
+    <main>
+<section id="intro" class="panel intro-panel">
+  <div class="content hero-layout">
+    <div class="hero-copy reveal-left">
+      <p class="eyebrow">Creative Portfolio</p>
+      <h1>Savannah Longmore</h1>
+      <p class="lead">I’m Savannah Longmore, a designer who enjoys turning ideas into clean, visually engaging experiences. I focus on creating layouts that feel intuitive, balanced, and easy for users to navigate.</p>
+      <div class="hero-actions reveal-up">
+        <a class="button primary" href="#projects">See My Work</a>
+        <a class="button secondary" href="#about">Learn More</a>
+      </div>
+    </div>
+
+    <div class="hero-cards" aria-hidden="true">
+      <article class="floating-card card one reveal-right stagger-item">
+        <p class="mini-label">Focus</p>
+        <h2>Layout & Structure</h2>
+        <p>I like organizing content so it feels clear and easy to follow.</p>
+      </article>
+
+      <article class="floating-card card two reveal-right stagger-item">
+        <p class="mini-label">Goal</p>
+        <h2>User-riendly</h2>
+        <p>My goal is to create websites that have user-friendly accessibility and navigation.</p>
+      </article>
+    </div>
+  </div>
+
+  <div class="wave-divider wave-about" aria-hidden="true">
+    <svg viewBox="0 0 1440 140" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="wave-about-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#c5002b"></stop>
+          <stop offset="100%" stop-color="#83005e"></stop>
+        </linearGradient>
+      </defs>
+      <path d="M0,90 C260,150 520,20 800,55 C1080,90 1260,145 1440,85 L1440,140 L0,140 Z"></path>
+    </svg>
+  </div>
+</section>
+
+<section id="about" class="panel about-panel">
+  <div class="content">
+    <p class="eyebrow reveal-up">About Me</p>
+    <h2 class="reveal-up">Thoughtful design with personality</h2>
+    <p class="section-intro reveal-up">I enjoy designing digital experiences that feel both expressive and easy to use. My approach focuses on balancing strong visuals with clear structure, making sure users can quickly understand where they are and what to do next.
+
+I’m especially interested in how color, spacing, and hierarchy can shape the way people interact with a design.</p>
+
+    <div class="card-grid three-up">
+      <article class="card info-card reveal-up stagger-item">
+        <h3>Creative Direction</h3>
+        <p>I enjoy building page concepts with mood, tone, and a clear visual identity.</p>
+      </article>
+
+      <article class="card info-card reveal-up stagger-item">
+        <h3>User-Focused Thinking</h3>
+        <p>I organize information so users can scan quickly and know where to go next.</p>
+      </article>
+
+      <article class="card info-card reveal-up stagger-item">
+        <h3>Responsive Layouts</h3>
+        <p>I adapt spacing, navigation, and content so the design stays strong from mobile to desktop.</p>
+      </article>
+    </div>
+  </div>
+
+  <div class="wave-divider wave-skills" aria-hidden="true">
+    <svg viewBox="0 0 1440 140" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="wave-skills-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#79006b"></stop>
+          <stop offset="100%" stop-color="#0e0a7b"></stop>
+        </linearGradient>
+      </defs>
+      <path d="M0,70 C240,130 500,10 760,40 C1020,70 1220,135 1440,60 L1440,140 L0,140 Z"></path>
+    </svg>
+  </div>
+</section>
+
+<section id="skills" class="panel skills-panel">
+  <div class="content">
+    <p class="eyebrow reveal-up">Technology skills</p>
+    <h2 class="reveal-up">Tools and strengths I bring into a project</h2>
+
+    <div class="card-grid three-up">
+      <article class="card skill-card reveal-up stagger-item">
+        <ion-icon name="logo-html5"></ion-icon>
+        <h3>HTML5</h3>
+        <p>Semantic structure that supports accessibility and clarity.</p>
+      </article>
+
+      <article class="card skill-card reveal-up stagger-item">
+        <ion-icon name="logo-css3"></ion-icon>
+        <h3>CSS / SCSS</h3>
+        <p>Responsive styling with reusable patterns and cleaner code organization.</p>
+      </article>
+
+      <article class="card skill-card reveal-up stagger-item">
+        <ion-icon name="logo-javascript"></ion-icon>
+        <h3>JavaScript</h3>
+        <p>Interactive details like observers, smooth navigation, and UI polish.</p>
+      </article>
+
+      <article class="card skill-card reveal-up stagger-item">
+        <ion-icon name="color-wand-outline"></ion-icon>
+        <h3>Visual Design</h3>
+        <p>Color, contrast, spacing, and hierarchy that help content feel intentional.</p>
+      </article>
+
+      <article class="card skill-card reveal-up stagger-item">
+        <ion-icon name="phone-portrait-outline"></ion-icon>
+        <h3>Responsive Design</h3>
+        <p>Layouts that remain comfortable and readable across many device sizes.</p>
+      </article>
+
+      <article class="card skill-card reveal-up stagger-item">
+        <ion-icon name="accessibility-outline"></ion-icon>
+        <h3>Accessibility</h3>
+        <p>Readable contrast, focus states, and better structure for real users.</p>
+      </article>
+    </div>
+  </div>
+
+  <div class="wave-divider wave-projects" aria-hidden="true">
+    <svg viewBox="0 0 1440 140" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="wave-projects-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#00dfd8"></stop>
+          <stop offset="100%" stop-color="#001b91"></stop>
+        </linearGradient>
+      </defs>
+      <path d="M0,95 C320,55 640,10 960,65 C1180,100 1320,110 1440,80 L1440,140 L0,140 Z"></path>
+    </svg>
+  </div>
+</section>
+
+<section id="projects" class="panel projects-panel">
+  <div class="content">
+    <p class="eyebrow reveal-up">My Work</p>
+    <h2 class="reveal-up">Card-based concepts with color and clarity</h2>
+
+    <div class="card-grid project-grid">
+      <article class="card project-card reveal-left stagger-item">
+        <div class="project-image image-one"></div>
+        <h3>Luxury Hotel Website</h3>
+        <p>A polished concept focused on imagery, atmosphere, and elegant structure.</p>
+        <a href="#connect" class="text-link">View Concept</a>
+      </article>
+
+      <article class="card project-card reveal-up stagger-item">
+        <div class="project-image image-two"></div>
+        <h3>Travel Conference Landing Page</h3>
+        <p>A bright one-page experience with strong motions and visual rhythm.</p>
+        <a href="#connect" class="text-link">View Concept</a>
+      </article>
+
+      <article class="card project-card reveal-right stagger-item">
+        <div class="project-image image-three"></div>
+        <h3>Auto Dealership Interface</h3>
+        <p>A dark and dramatic website with interactive elements and design.</p>
+        <a href="#connect" class="text-link">View Concept</a>
+      </article>
+    </div>
+  </div>
+
+  <div class="wave-divider wave-connect" aria-hidden="true">
+    <svg viewBox="0 0 1440 140" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="wave-connect-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#00c257"></stop>
+          <stop offset="100%" stop-color="#0087b0"></stop>
+        </linearGradient>
+      </defs>
+      <path d="M0,85 C260,140 580,15 860,55 C1140,95 1290,120 1440,80 L1440,140 L0,140 Z"></path>
+    </svg>
+  </div>
+</section>
+
+<section id="connect" class="panel connect-panel">
+  <div class="content contact-layout">
+    <div class="reveal-left">
+      <p class="eyebrow">Connect</p>
+      <h2>Let’s make something that feels memorable.</h2>
+
+      <div class="socials reveal-up" aria-label="Social links">
+        <a href="#" aria-label="GitHub"><ion-icon name="logo-github"></ion-icon></a>
+        <a href="#" aria-label="Discord"><ion-icon name="logo-discord"></ion-icon></a>
+        <a href="#" aria-label="Codepen"><ion-icon name="logo-codepen"></ion-icon></a>
+        <a href="#" aria-label="Dribbble"><ion-icon name="logo-dribbble"></ion-icon></a>
+      </div>
+    </div>
+
+    <form class="card contact-card reveal-right">
+      <label>
+        Name
+        <input type="text" name="name" placeholder="Your name">
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" placeholder="you@example.com">
+      </label>
+      <label>
+        Message
+        <textarea name="message" rows="5" placeholder="Tell me about your project"></textarea>
+      </label>
+      <button type="button" class="button primary">Send Message</button>
+    </form>
+  </div>
+</section>
+    </main>
+  </div>
+
+  <div id="footerWrapper">
+    <footer>
+      <p>&copy; <span id="year"></span> &bull; Savannah Longmore</p>
+    </footer>
+  </div>
+
+  <script src="js/scripts.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

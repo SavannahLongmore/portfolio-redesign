@@ -1,0 +1,71 @@
+@media (min-width: 768px) {
+  nav {
+    padding: 0.8rem 1.15rem;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 0.7rem;
+  }
+
+  nav li {
+    flex: 0 1 auto;
+  }
+
+  nav a {
+    min-height: auto;
+    padding: 0.9rem 1rem;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: flex-start;
+
+    .icon {
+      display: none;
+    }
+
+    .label {
+      display: block;
+    }
+  }
+
+  nav a ion-icon {
+    display: none;
+  }
+
+  nav a span {
+    display: inline;
+  }
+
+  .wave-divider svg {
+    height: 130px;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-layout,
+  .contact-layout {
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .card-grid.three-up,
+  .project-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .hero-cards {
+    align-self: center;
+  }
+
+  .floating-card.one {
+    transform: translateY(-1.5rem);
+  }
+
+  .floating-card.two {
+    transform: translateX(2rem);
+  }
+}

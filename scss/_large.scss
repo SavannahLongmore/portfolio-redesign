@@ -1,0 +1,92 @@
+
+@media (min-width: 1024px) {
+body {
+  display: grid;
+  grid-template-columns: 17rem minmax(0, 1fr);
+}
+
+#navWrapper {
+  height: 100vh;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: none;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: grid;
+  align-content: center;
+  gap: 2rem;
+  padding: 2rem 1.25rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: $textLight;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
+.brand-mark {
+  width: 2.7rem;
+  height: 2.7rem;
+  display: grid;
+  place-items: center;
+  border-radius: 0.95rem;
+  background: rgba(109, 196, 216, 0.18);
+  border: 1px solid rgba(109, 196, 216, 0.35);
+  font-weight: $boldWeight;
+}
+
+.brand-name {
+  font-size: 1.1rem;
+  font-weight: $mediumWeight;
+}
+
+nav ul {
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+
+  nav a {
+    .icon {
+      display: block;
+    }
+
+    .label {
+      display: block;
+    }
+  }
+
+  nav a ion-icon {
+    display: block;
+  }
+
+  nav a span {
+    display: inline;
+  }
+
+.card-grid {
+    grid-template-columns: 1fr 1fr 1fr; // large = 3 columns
+  }
+
+#mainWrapper,
+#footerWrapper {
+  min-width: 0;
+}
+
+#footerWrapper {
+  grid-column: 2 / 3;
+}
+
+.panel {
+  padding: 4rem 2.5rem;
+}
+  .wave-divider svg {
+    height: 160px;
+  }
+}
